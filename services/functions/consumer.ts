@@ -77,7 +77,7 @@ export async function handler(event: any) {
 
       var deleteParams = {
         QueueUrl:
-          "https://sqs.us-east-1.amazonaws.com/447812286091/lambda-queue-Queue",
+          "https://sqs.us-east-1.amazonaws.com/*********/lambda-queue-Queue", //put your sqs url
         ReceiptHandle: event.Records[0].receiptHandle,
       };
       //deleting failed message from queue
